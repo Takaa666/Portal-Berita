@@ -1,0 +1,4 @@
+start in home(first page)->login/register->master-berita(tambah,detail,edit,delete)->log out->return at start
+
+
+note : sebelum login tidak bisa mengakses master berita.Jika sudah login otomatis master berita menjadi main page.
