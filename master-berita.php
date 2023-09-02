@@ -54,15 +54,15 @@ $hasil = mysqli_query($connection, "SELECT * FROM  master_berita ORDER by id_ber
     <div class="row row-cols-1 row-cols-md-2 g-4 mt-5 mx-3">
       <?php while ($row = mysqli_fetch_assoc($hasil)) { ?>
         <div class="col-4">
-          <div class="card bg-dark text-white">
+          <div class="card border-dark">
             <div class="container card-header">
               <div class="d-flex justify-content-center">
                 <img src="<?php echo $row['gambar_berita']; ?>" class="card-img-top" alt="...">
               </div>
             </div>
             <div class="card-body text-start">
-              <h5 class="card-title text-white"><?php echo $row['judul_berita']; ?></h5>
-              <p class="card-text text-white"><?php echo $row['deskripsi_berita']; ?></p>
+              <h5 class="card-title"><?php echo $row['judul_berita']; ?></h5>
+              <p class="card-text"><?php echo $row['deskripsi_berita']; ?></p>
               <div class="container">
                 <div class="w-100 text-center">
                   <a href="berita.php?id_berita=<?= $row['id_berita'] ?>" type="button" class="btn btn-primary">Lihat Lebih</a>
