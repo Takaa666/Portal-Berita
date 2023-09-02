@@ -34,14 +34,13 @@ $hasil = mysqli_query($connection, "SELECT * FROM  master_berita WHERE id_berita
   <?php
   }else{
   ?>
-    <a href="home.php" type="button" class="btn btn-danger mx-2">Back</a>
+    <a href="home.php" type="button" class="btn btn-danger mx-5 mt-3">Back</a>
   <?php
   }
   ?>
 
 
 <!-- berita -->
-<div class="container">
   <?php
     // Loop through the query results
     while ($row = mysqli_fetch_assoc($hasil)) {
@@ -63,7 +62,6 @@ $hasil = mysqli_query($connection, "SELECT * FROM  master_berita WHERE id_berita
   <?php
     }
   ?>
-</div>
 </body>
 
 </html>
